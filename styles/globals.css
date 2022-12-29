@@ -15,12 +15,97 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.contact-container{
+  width: 100%;
+  padding-top: 116px;
+  padding-bottom: 212px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-title{
+  max-width: 520px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Proxima Nova;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 57px;
+  margin-top: 106px;
+  margin-bottom: 116px;
+  margin-left: 5px;
+  letter-spacing: 1px;
+}
+.form-contact{
+  display: flex;
+  flex-direction: column;
+  max-width: 928px;
+  height: auto;
+  overflow: auto;
+}
+.form-row{
+  max-width: 928px;
+  height: auto;
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.textfield-container{
+  display: flex;
+  flex-direction: column;
+  width: 434px;
+  height: auto;
+  margin-right: 5px;
+}
+.textfield-title{
+  color: #000000;
+  font-family: Proxima Nova;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 58px;
+  text-align: left;
+}
+.textfield{
+  background-color: #ffffff;
+  color: #000000;
+  max-width: 432px;
+  height: 54px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 23px;
+  padding: 5px;
+}
+.t-large{
+  max-width: 928px;
+}
+.textfield:focus {
+  outline: none ;
+  border-bottom: 3px solid #F5b843 ;
+}
+.form-row button{
+  width: 217px;
+  height: 74px;
+  text-align: center;
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  border: 1px solid #F5C742;
+  cursor: pointer;
+  background-color: #F5C742;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.form-row button:hover{
+  color: #F5C742;
+  background-color: #000000;
+  border: #000000;
 }
