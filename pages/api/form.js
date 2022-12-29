@@ -9,7 +9,7 @@ export default async function handler(req, res) {
             console.log(req.body);
 
             const transporter = nodemailer.createTransport({
-                name: "Softkitec-Webpage",
+                name: "My-Webpage",
                 host : "smtp.gmail.com",
                 port : 465,
                 secure: true,
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
             const info = await transporter.sendMail({
                 from: email,
                 to: "bosc790@gmail.com",
-                subject: "MESSAGE FROM SOFTKITEC WEBPAGE",
+                subject: "MESSAGE FROM MY WEBPAGE",
                 text: `Name: ${name}${" "}${lastname}\nPhone number: ${number}\nE-mail: ${email}\nCity: ${city}\nMessage: ${message}`,
             });
 
