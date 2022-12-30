@@ -50,7 +50,7 @@ const Contact = () =>{
   return (
     <> 
       <div id='contact' className='contact-container'>
-        <div className='contact-title disappear'>Contact Softkitect</div>
+        <div className='contact-title disappear'>Contact</div>
         <form className='form-contact disappear' >
           <div className='form-row'>
             <div className='textfield-container'>
